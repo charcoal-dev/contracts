@@ -14,7 +14,7 @@ namespace Charcoal\Contracts\Buffers;
  * The interface ensures that operations involving sensitive data are explicitly defined
  * with a focus on preventing unintended exposure or serialization of such data.
  */
-interface SensitiveKeyBufferInterface extends FixedLengthBufferInterface
+interface SensitiveKeyBufferInterface extends ImmutableBufferInterface
 {
     public function bytes(): never;
 
