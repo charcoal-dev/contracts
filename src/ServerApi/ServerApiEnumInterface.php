@@ -14,7 +14,7 @@ use Charcoal\Contracts\Enums\SapiType;
  * Defines the contract for a server API enumeration interface.
  * This interface provides a method to retrieve the server API type.
  */
-interface ServerApiEnumInterface
+interface ServerApiEnumInterface extends \UnitEnum
 {
     public function type(): SapiType;
 }
