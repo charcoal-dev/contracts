@@ -8,7 +8,7 @@ declare(strict_types=1);
 
 namespace Charcoal\Contracts\Http;
 
-use Charcoal\Contracts\ServerApiInterface;
+use Charcoal\Contracts\ServerApi\ServerApiInterface;
 
 /**
  * Represents the interface for the HTTP server API, providing method declarations

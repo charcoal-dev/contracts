@@ -6,7 +6,7 @@
 
 declare(strict_types=1);
 
-namespace Charcoal\Contracts;
+namespace Charcoal\Contracts\ServerApi;
 
 use Charcoal\Contracts\Enums\SapiType;
 
