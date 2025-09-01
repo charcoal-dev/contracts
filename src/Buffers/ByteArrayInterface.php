@@ -15,8 +15,6 @@ use Charcoal\Contracts\Encoding\EncodingSchemeInterface;
  */
 interface ByteArrayInterface
 {
-    public function __construct(string|ByteArrayInterface $data = "");
-
     public function length(): int;
 
     public function equals(string|ByteArrayInterface $b): bool;
