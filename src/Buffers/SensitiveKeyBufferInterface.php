@@ -39,4 +39,6 @@ interface SensitiveKeyBufferInterface extends ImmutableBufferInterface
     public function __clone(): never;
 
     public function __debugInfo(): never;
+
+    public function equals(string|ByteArrayInterface $b): never;
 }
