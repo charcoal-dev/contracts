@@ -11,9 +11,7 @@ namespace Charcoal\Contracts\Http;
 use Charcoal\Contracts\ServerApi\ServerApiInterface;
 
 /**
- * Represents the interface for the HTTP server API, providing method declarations
- * that define the contract to be implemented by classes interacting with the HTTP server.
- * @api
+ * Marker interface for HTTP server API implementations.
  */
 interface HttpServerApiInterface extends ServerApiInterface
 {
