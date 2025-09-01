@@ -15,7 +15,7 @@ namespace Charcoal\Contracts\Cipher;
 interface CipherAlgorithmInterface
 {
     /**
-     * @return string Actual algorithm name; Acceptable to backend provider as-is
+     * @return string Actual algorithm name; e.g. "aes-256-cbc"
      */
     public function algo(): string;
 
