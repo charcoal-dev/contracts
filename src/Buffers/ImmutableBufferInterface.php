@@ -9,10 +9,11 @@ declare(strict_types=1);
 namespace Charcoal\Contracts\Buffers;
 
 /**
- * Represents an interface for a buffer with arbitrary length capabilities.
- * Extends the functionality of the ByteArrayInterface to allow for
- * dynamic resizing or manipulation of the buffer size.
+ * Represents a buffer that cannot be modified after its creation.
+ * This interface extends the ByteArrayInterface, inheriting its functionality,
+ * while preventing any changes to the underlying buffer.
  */
 interface ImmutableBufferInterface extends ByteArrayInterface
 {
+    public function append(string|ByteArrayInterface $data): never;
 }

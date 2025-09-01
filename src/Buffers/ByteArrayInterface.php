@@ -8,13 +8,18 @@ declare(strict_types=1);
 
 namespace Charcoal\Contracts\Buffers;
 
+use Charcoal\Contracts\Encoding\EncodingSchemeInterface;
+
 /**
- * Interface ByteArrayInterface
- * Represents a contract for objects that can provide their data as a binary string.
+ * Defines a contract for managing and manipulating a byte array representation.
  */
 interface ByteArrayInterface
 {
-    public function bytes(): string;
+    public function __construct(string|ByteArrayInterface $data = "");
 
     public function length(): int;
+
+    public function equals(string|ByteArrayInterface $b): bool;
+
+    public static function decode(EncodingSchemeInterface $scheme, string $data): static;
 }
