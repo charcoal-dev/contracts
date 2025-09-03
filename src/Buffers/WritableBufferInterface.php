@@ -20,4 +20,6 @@ interface WritableBufferInterface extends ByteArrayInterface
     public function toImmutable(): ImmutableBufferInterface;
 
     public function append(string|ByteArrayInterface $data): static;
+
+    public function prepend(string|ByteArrayInterface $data): static;
 }
