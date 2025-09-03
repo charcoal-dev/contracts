@@ -38,7 +38,7 @@ interface ReadableBufferInterface extends ByteArrayInterface
     public function copy(int $offset = 0, int $length = null): self;
 
     /**
-     * Reverses bytes sequence (i.e. endianness) within same instance.
+     * Reverses a bytes sequence (i.e., endianness) within same instance.
      */
     public function reverse(): self;
 }
