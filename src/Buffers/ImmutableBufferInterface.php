@@ -15,5 +15,7 @@ namespace Charcoal\Contracts\Buffers;
  */
 interface ImmutableBufferInterface extends ByteArrayInterface
 {
-    public function append(string|ByteArrayInterface $data): never;
+    public function withAppended(string|ByteArrayInterface $data): static;
+
+    public function withPrepended(string|ByteArrayInterface $data): static;
 }
