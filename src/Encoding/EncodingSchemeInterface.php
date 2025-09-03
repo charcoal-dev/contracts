@@ -8,7 +8,6 @@ declare(strict_types=1);
 
 namespace Charcoal\Contracts\Encoding;
 
-use Charcoal\Contracts\Buffers\ByteArrayInterface;
 use Charcoal\Contracts\Buffers\ReadableBufferInterface;
 
 /**
@@ -17,9 +16,7 @@ use Charcoal\Contracts\Buffers\ReadableBufferInterface;
  */
 interface EncodingSchemeInterface
 {
-    public function encoder(): ?BufferEncoderInterface;
+    public function encode(ReadableBufferInterface|string $data): string;
 
-    public function encode(ReadableBufferInterface $data): string;
-
-    public function decode(string $data): ByteArrayInterface;
+    public function decode(string $data): string;
 }
