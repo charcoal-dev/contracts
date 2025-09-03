@@ -32,11 +32,4 @@ interface WritableBufferInterface extends ByteArrayInterface
     public function toImmutable(): ImmutableBufferInterface;
 
     public function flush(): void;
-
-    /**
-     * @param resource $stream
-     * @param int $length
-     * @return void
-     */
-    public function fill($stream, int $length = 0): void;
 }
