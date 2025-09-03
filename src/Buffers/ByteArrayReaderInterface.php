@@ -30,7 +30,7 @@ interface ByteArrayReaderInterface
      * Reset the pointer to the beginning of the buffer. (p=0)
      * @api
      */
-    public function reset(): static;
+    public function reset(): self;
 
     /**
      * Read the next bytes from the buffer. (p=bytes)
@@ -96,7 +96,7 @@ interface ByteArrayReaderInterface
      * Set the pointer to a specific position in the buffer.
      * @api
      */
-    public function setPointer(int $pos): static;
+    public function setPointer(int $pos): self;
 
     /**
      * Number of bytes remaining in the buffer.
