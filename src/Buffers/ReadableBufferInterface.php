@@ -23,4 +23,6 @@ interface ReadableBufferInterface extends ByteArrayInterface
     public function read(): ByteArrayReaderInterface;
 
     public function encode(EncodingSchemeInterface $scheme): string;
+
+    public function equals(string|ReadableBufferInterface $b): bool;
 }
