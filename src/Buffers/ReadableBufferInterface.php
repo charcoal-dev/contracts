@@ -18,5 +18,9 @@ interface ReadableBufferInterface extends ByteArrayInterface
 {
     public function bytes(): string;
 
+    public function pop(int $offset, int $length = null): string;
+
+    public function read(): ByteArrayReaderInterface;
+
     public function encode(EncodingSchemeInterface $scheme): string;
 }
