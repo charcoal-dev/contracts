@@ -32,4 +32,8 @@ interface WritableBufferInterface extends ByteArrayInterface
     public function toImmutable(): ImmutableBufferInterface;
 
     public function flush(): void;
+
+    public function copy(int $offset = 0, int $length = null): self;
+
+    public function reverse(): self;
 }

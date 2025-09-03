@@ -31,14 +31,4 @@ interface ReadableBufferInterface extends ByteArrayInterface
     public function encode(EncodingSchemeInterface $scheme): string;
 
     public function equals(ReadableBufferInterface|string $b): bool;
-
-    /**
-     * Creates new buffer instance using substring from the current buffer.
-     */
-    public function copy(int $offset = 0, int $length = null): self;
-
-    /**
-     * Reverses a bytes sequence (i.e., endianness) within same instance.
-     */
-    public function reverse(): self;
 }
