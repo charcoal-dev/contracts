@@ -31,4 +31,6 @@ interface ReadableBufferInterface extends ByteArrayInterface
     public function encode(EncodingSchemeInterface $scheme): string;
 
     public function equals(ReadableBufferInterface|string $b): bool;
+
+    public function copy(int $offset = 0, int $length = null): self;
 }
