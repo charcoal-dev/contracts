@@ -32,5 +32,13 @@ interface ReadableBufferInterface extends ByteArrayInterface
 
     public function equals(ReadableBufferInterface|string $b): bool;
 
+    /**
+     * Creates new buffer instance using substring from the current buffer.
+     */
     public function copy(int $offset = 0, int $length = null): self;
+
+    /**
+     * @return self
+     */
+    public function reverse(): self;
 }
