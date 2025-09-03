@@ -13,7 +13,7 @@ namespace Charcoal\Contracts\Buffers;
  */
 interface BufferSpinOffInterface extends ImmutableBufferInterface
 {
-    public function withAppended(ReadableBufferInterface|string $data): static;
+    public function withAppended(ReadableBufferInterface|string $data): self;
 
-    public function withPrepended(ReadableBufferInterface|string $data): static;
+    public function withPrepended(ReadableBufferInterface|string $data): self;
 }

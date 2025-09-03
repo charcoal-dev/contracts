@@ -15,11 +15,14 @@ namespace Charcoal\Contracts\Buffers;
  */
 interface WritableBufferInterface extends ByteArrayInterface
 {
-    public function __construct(ReadableBufferInterface|string $data = "");
+    public function __construct(
+        ReadableBufferInterface|string $data = "",
+        int                            $maxBytes = 0
+    );
 
-    public function append(ReadableBufferInterface|string $data): static;
+    public function append(ReadableBufferInterface|string $data): self;
 
-    public function prepend(ReadableBufferInterface|string $data): static;
+    public function prepend(ReadableBufferInterface|string $data): self;
 
     public function toImmutable(): ImmutableBufferInterface;
 
