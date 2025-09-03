@@ -1,0 +1,19 @@
+<?php
+/*
+ * Part of the "charcoal-dev/contracts" package.
+ * @link https://github.com/charcoal-dev/contracts
+ */
+
+declare(strict_types=1);
+
+namespace Charcoal\Contracts\Buffers;
+
+/**
+ * Represents a contract for a buffer that can be appended or prepended to another buffer.
+ */
+interface BufferSpinOffInterface extends ImmutableBufferInterface
+{
+    public function withAppended(ReadableBufferInterface|string $data): static;
+
+    public function withPrepended(ReadableBufferInterface|string $data): static;
+}
