@@ -18,7 +18,13 @@ interface ReadableBufferInterface extends ByteArrayInterface
 {
     public function bytes(): string;
 
-    public function pop(int $offset, int $length = null): string;
+    public function substr(int $offset, int $length = null): string;
+
+    public function contains(string $needle): bool;
+
+    public function startsWith(string $needle): bool;
+
+    public function endsWith(string $needle): bool;
 
     public function read(): ByteArrayReaderInterface;
 
