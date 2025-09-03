@@ -15,10 +15,15 @@ namespace Charcoal\Contracts\Buffers;
  */
 interface WritableBufferInterface extends ByteArrayInterface
 {
-    public function __construct(
-        ReadableBufferInterface|string $data = "",
-        int                            $maxBytes = 0
-    );
+    public function __construct(ReadableBufferInterface|string $data = "");
+
+    public function setMaxSize(int $bytes): self;
+
+    public function lock(): self;
+
+    public function unlock(): self;
+
+    public function isLocked(): bool;
 
     public function append(ReadableBufferInterface|string $data): self;
 
@@ -27,4 +32,11 @@ interface WritableBufferInterface extends ByteArrayInterface
     public function toImmutable(): ImmutableBufferInterface;
 
     public function flush(): void;
+
+    /**
+     * @param resource $stream
+     * @param int $length
+     * @return void
+     */
+    public function fill($stream, int $length = 0): void;
 }
