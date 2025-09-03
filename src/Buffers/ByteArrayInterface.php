@@ -17,7 +17,5 @@ interface ByteArrayInterface
 {
     public function length(): int;
 
-    public function equals(string|ByteArrayInterface $b): bool;
-
     public static function decode(EncodingSchemeInterface $scheme, string $data): static;
 }
