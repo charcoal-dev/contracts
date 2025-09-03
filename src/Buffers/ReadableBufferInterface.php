@@ -18,7 +18,7 @@ interface ReadableBufferInterface extends ByteArrayInterface
 {
     public function bytes(): string;
 
-    public function substr(int $offset, int $length = null): string;
+    public function subString(int $offset, int $length = null): string;
 
     public function contains(string $needle): bool;
 
@@ -30,5 +30,5 @@ interface ReadableBufferInterface extends ByteArrayInterface
 
     public function encode(EncodingSchemeInterface $scheme): string;
 
-    public function equals(string|ReadableBufferInterface $b): bool;
+    public function equals(ReadableBufferInterface|string $b): bool;
 }
