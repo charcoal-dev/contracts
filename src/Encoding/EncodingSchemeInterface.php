@@ -16,7 +16,7 @@ use Charcoal\Contracts\Buffers\ReadableBufferInterface;
  */
 interface EncodingSchemeInterface
 {
-    public function encode(ReadableBufferInterface|string $data): string;
+    public function encode(ReadableBufferInterface|string $raw): string;
 
-    public function decode(string $data): string;
+    public function decode(string $encoded): string;
 }
