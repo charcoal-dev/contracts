@@ -6,7 +6,7 @@
 
 declare(strict_types=1);
 
-namespace Charcoal\Contracts\Buffers;
+namespace Charcoal\Contracts\Buffers\Support;
 
 /**
  * Represents a contract for reading data from a byte array. This interface is intended

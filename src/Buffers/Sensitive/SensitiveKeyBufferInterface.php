@@ -6,7 +6,10 @@
 
 declare(strict_types=1);
 
-namespace Charcoal\Contracts\Buffers;
+namespace Charcoal\Contracts\Buffers\Sensitive;
+
+use Charcoal\Contracts\Buffers\ByteArrayInterface;
+use Charcoal\Contracts\Buffers\Immutable\ImmutableBufferInterface;
 
 /**
  * Defines a contract for a buffer specifically designed to handle sensitive key data securely.

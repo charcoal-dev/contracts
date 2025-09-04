@@ -6,7 +6,9 @@
 
 declare(strict_types=1);
 
-namespace Charcoal\Contracts\Buffers;
+namespace Charcoal\Contracts\Buffers\Immutable;
+
+use Charcoal\Contracts\Buffers\ReadableBufferInterface;
 
 /**
  * Represents a contract for a buffer that can be appended or prepended to another buffer.

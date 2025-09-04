@@ -6,7 +6,9 @@
 
 declare(strict_types=1);
 
-namespace Charcoal\Contracts\Buffers;
+namespace Charcoal\Contracts\Buffers\Immutable;
+
+use Charcoal\Contracts\Buffers\ByteArrayInterface;
 
 /**
  * Represents a buffer that cannot be modified after its creation.

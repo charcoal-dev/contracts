@@ -6,7 +6,7 @@
 
 declare(strict_types=1);
 
-namespace Charcoal\Contracts\Buffers;
+namespace Charcoal\Contracts\Buffers\Immutable;
 
 /**
  * Represents an interface for a fixed-length buffer, which extends the functionality
