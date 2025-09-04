@@ -11,7 +11,11 @@ namespace Charcoal\Contracts\Encoding;
 use Charcoal\Contracts\Buffers\ReadableBufferInterface;
 
 /**
- * Represents a marker for encoding-related functionality.
+ * Defines the structure for an encoding scheme, including methods
+ * for determining if a string is encoded, encoding raw data,
+ * and decoding encoded strings.
+ *
+ * Implement this on an Enum that is a group of EncodingSchemeStaticInterface.
  */
 interface EncodingSchemeInterface
 {
