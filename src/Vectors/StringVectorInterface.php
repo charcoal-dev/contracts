@@ -11,7 +11,7 @@ namespace Charcoal\Contracts\Vectors;
 /**
  * Represents an interface for a vector that specifically handles strings.
  * Extends the functionality of a general vector interface.
- * @implements VectorInterface<string>
+ * @template-extends VectorInterface<string>
  */
 interface StringVectorInterface extends VectorInterface
 {
