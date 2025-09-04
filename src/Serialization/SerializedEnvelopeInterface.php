@@ -8,7 +8,7 @@ declare(strict_types=1);
 
 namespace Charcoal\Contracts\Serialization;
 
-use Charcoal\Contracts\Buffers\ImmutableBufferInterface;
+use Charcoal\Contracts\Buffers\Immutable\ImmutableBufferInterface;
 
 /**
  * Represents the contract for a serialized envelope object.
