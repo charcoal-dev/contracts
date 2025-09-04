@@ -1,5 +1,5 @@
 <?php
-/*
+/**
  * Part of the "charcoal-dev/contracts" package.
  * @link https://github.com/charcoal-dev/contracts
  */
