@@ -15,4 +15,5 @@ namespace Charcoal\Contracts\Vectors;
  */
 interface StringVectorInterface extends VectorInterface
 {
+    public function join(string $glue): string;
 }
