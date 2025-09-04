@@ -16,6 +16,8 @@ use Charcoal\Contracts\Buffers\ReadableBufferInterface;
  */
 interface EncodingSchemeInterface
 {
+    public function isEncoded(string $str): bool;
+
     public function encode(ReadableBufferInterface|string $raw): string;
 
     public function decode(string $encoded): string;
