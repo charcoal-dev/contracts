@@ -12,13 +12,12 @@ use Charcoal\Contracts\Buffers\ReadableBufferInterface;
 
 /**
  * Represents a marker for encoding-related functionality.
- * Can be used with an Enum instead of concrete classes.
  */
 interface EncodingSchemeInterface
 {
-    public function isEncoded(string $str): bool;
+    public static function isEncoded(string $str): bool;
 
-    public function encode(ReadableBufferInterface|string $raw): string;
+    public static function encode(ReadableBufferInterface|string $raw): string;
 
-    public function decode(string $encoded): string;
+    public static function decode(string $encoded): string;
 }
