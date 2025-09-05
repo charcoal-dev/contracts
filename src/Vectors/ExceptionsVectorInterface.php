@@ -15,4 +15,5 @@ namespace Charcoal\Contracts\Vectors;
  */
 interface ExceptionsVectorInterface extends VectorInterface
 {
+    public function append(\Throwable $exception): self;
 }
