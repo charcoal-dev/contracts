@@ -14,9 +14,9 @@ namespace Charcoal\Contracts\Serialization;
  */
 interface SerializableStaticCallback
 {
-    public static function getSerializable(array $callback, bool|string|int|null ...$args): static;
+    public static function getSerializable(string|array $callback, bool|string|int|null ...$args): static;
 
-    public function __construct(array $callback, bool|string|int|null ...$args);
+    public function __construct(string|array $callback, bool|string|int|null ...$args);
 
     public function invoke(): mixed;
 
