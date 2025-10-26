@@ -14,5 +14,10 @@ namespace Charcoal\Contracts\Sapi;
  */
 interface DomainMessageEnumInterface extends \UnitEnum
 {
-    public function getTranslatedMessage(SapiRequestContextInterface $context, ?array $baggage = null): string;
+    public function getTranslatedMessage(
+        ?SapiRequestContextInterface $context = null,
+        ?array $baggage = null
+    ): string;
+
+    public function getCode(): int|string;
 }
