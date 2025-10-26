@@ -16,5 +16,5 @@ interface ValidationExceptionInterface extends \Throwable
 {
     public function getTranslatedMessage(): string;
 
-    public function getTranslatedCode(): int;
+    public function getTranslatedCode(): int|string;
 }
