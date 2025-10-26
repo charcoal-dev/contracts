@@ -14,4 +14,7 @@ namespace Charcoal\Contracts\Sapi;
  */
 interface ValidationExceptionInterface extends \Throwable
 {
+    public function getTranslatedMessage(): string;
+
+    public function getTranslatedCode(): int;
 }
