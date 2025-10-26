@@ -16,8 +16,11 @@ interface DomainMessageEnumInterface extends \UnitEnum
 {
     public function getTranslatedMessage(
         ?SapiRequestContextInterface $context = null,
-        ?array $baggage = null
+        ?array                       $baggage = null
     ): string;
 
-    public function getCode(): int|string;
+    public function getCode(
+        ?SapiRequestContextInterface $context = null,
+        ?array                       $baggage = null
+    ): int|string;
 }
