@@ -6,7 +6,7 @@
 
 declare(strict_types=1);
 
-namespace Charcoal\Contracts\Sapi;
+namespace Charcoal\Contracts\Sapi\Exceptions;
 
 /**
  * Interface ValidationExceptionInterface
@@ -14,7 +14,5 @@ namespace Charcoal\Contracts\Sapi;
  */
 interface ValidationExceptionInterface extends \Throwable
 {
-    public function getTranslatedMessage(): string;
-
-    public function getTranslatedCode(): int|string;
+    public function getContext(): array;
 }
