@@ -15,4 +15,6 @@ namespace Charcoal\Contracts\Sapi;
 interface ServerApiInterface
 {
     public function type(): SapiType;
+
+    public function getCurrentUuid(): ?string;
 }
